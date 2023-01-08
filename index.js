@@ -344,6 +344,6 @@ app.delete('/headlines:apikey',(req, res)=>{
 
 
 
-app.listen(2001, ()=>{
+app.listen(process.env.PORT || 2001, ()=>{
     console.log('Running')
 })
